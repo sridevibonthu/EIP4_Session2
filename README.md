@@ -1,6 +1,6 @@
 # EIP4_Session2
 Assignment 2
-# Log
+# 1. Log
 Train on 60000 samples, validate on 10000 samples
 Epoch 1/20
 
@@ -85,11 +85,12 @@ Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 <keras.callbacks.History at 0x7fd2d319fc18>
 
 
-# result of model.evaluate
+# 2. result of model.evaluate
 score = model.evaluate(X_test, Y_test, verbose=0)
 print(score)
 
 [0.01733853554037414, 0.9944]
 
-#strategy followed
+# 3. strategy followed
+
 
