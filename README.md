@@ -93,4 +93,14 @@ print(score)
 
 # 3. strategy followed
 
+I have gone through all the eight models one by one. In code 2, max pooling was introduced after receptive field of 9X9 as it should not be introduced so early, but the number of parameters were too high and they were reduced by reducing number of filters, but accuracy also dropped. Batch normalization standaradizes the inputs, and its impact is observed in the code 4 and the regularization using dropout in code 6. How learning rate is controlled with the help of scheduler in code7 and addition of dropout after every convolution layer at last code.
+
+I have not much changed the structure of the code which is evolved from code 2 to code 8. I have managed to control the number of filters so that the total number of parameters will be around 15K. 
+
+I have added BatchNormalization and dropout after every convolution layer except the last one.
+
+I have added a dropout of 15% at the early convolution layers (before maxpooling) and 12% at the last layers.
+
+Tried several models and checked the logs.
+
 
